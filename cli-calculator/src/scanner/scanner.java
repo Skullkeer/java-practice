@@ -8,11 +8,35 @@ public class scanner {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter First Number: ");
-        String num1 = scanner.nextLine();
+        double num1 = scanner.nextDouble();
         System.out.print("Enter Second Number: ");
-        String num2 = scanner.nextLine();
-        System.out.print("Enter Operation");
-        System.out.println(num1);
+        double num2 = scanner.nextDouble();
+        System.out.print("Enter Operation: ");
+        String operation = scanner.next();
+
+        switch (operation) {
+            case "+":
+                double result = num1 += num2;
+                System.out.print(result);
+                return;
+
+            case "-":
+                result = num1 -= num2;
+                System.out.print(result);
+                return;
+
+            case "/":
+                result = num1 / num2;
+                System.out.print(result);
+                return;
+
+            case "*":
+                result = num1 * num2;
+                System.out.print(result);
+                return;
+
+        }
+
         scanner.close();
 
     }
