@@ -16,12 +16,12 @@ public class scanner {
 
         switch (operation) {
             case "+":
-                double result = num1 += num2;
+                double result = num1 + num2;
                 System.out.print(result);
                 return;
 
             case "-":
-                result = num1 -= num2;
+                result = num1 - num2;
                 System.out.print(result);
                 return;
 
