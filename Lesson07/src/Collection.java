@@ -70,7 +70,7 @@ public class Collection {
         for (String name : fruitCount.keySet()) {
             System.out.println(name + ": " + fruitCount.get(name));
         }
-        
+
 
     }
 
