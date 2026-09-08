@@ -22,10 +22,10 @@ Save your source code in Question3a.java.
 
 b)
 
->
->
->
->
->
->
->
+> The Workers resposibilty is to create thumbnails while keeping
+> interface resposive, this is done with multi threading, one for the
+> UI and one for the worker. The worker also needs access to the
+> thumbnail base image in order to trasfer it into a thumbnail,
+> if the UI also tries to edit the base image, it can cause a race condition
+> and break the program, in order to fix this, we can create a seperate copy
+> of the image just for the worker thread.

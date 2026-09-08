@@ -25,9 +25,30 @@
  * 3. Style - natural naming for variables and methods, appropriate indentation, etc.
  */
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Question4a {
 
+    int total = 0;
+
+    int totalLongLoans(ArrayList<Integer> lengths) {
+        for (int i : lengths) {
+            if (i > 14){
+                total += i;
+            }
+        }
+        return total;
+    }
+
     public static void main(String[] args) {
-        // This stub has been added for your convenience
+        Question4a q = new Question4a();
+        Integer[] a = {7, 21, 30, 14};
+        ArrayList<Integer> l = new ArrayList<>(Arrays.asList(a));
+
+        System.out.println("Total: " + q.totalLongLoans(l));
+
+
     }
 }
