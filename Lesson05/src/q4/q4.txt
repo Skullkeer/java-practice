@@ -1,0 +1,12 @@
+for loops and while loops are entry controlled loops, this means that
+the condition for running is check prior to running the code, on the other hand
+do while loops are exit controlled, that is, the code block is executed regardless
+and then checked whether it should run again, i.e. the code will always be run
+at least once.
+
+for loops are best used for known iteration counts because the variables used
+are local to the scope of the loop, unlike while loops whose variables are declared
+beforehand.
+
+in order to prevent infinite loops, the developer should ensure correct usage
+of end conditions and provide a backup break condition if the loop goes on too long

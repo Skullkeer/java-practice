@@ -1,0 +1,31 @@
+Text response file
+
+ITEM 2 (PRACTICE - TERTIARY) - QUESTION 2
+
+Provide your responses for Q2 here
+Unless otherwise indicated, no other files will be assessed for this question
+
+Write your responses next to the '>' characters only
+You should only be writing points or brief sentences next to each '>' character
+The number of '>' characters indicates the maximum number of points/sentences for the response
+You may not need to use all of the provided lines
+Excessively long or unclear communications may be penalized
+
+==================================================
+
+a)
+
+Do not write your code here.
+Save your source code in Question2a.java.
+
+==================================================
+
+b)
+
+> For our designed input we should use two user inputs within a while true loop to ensure the program doesn't exit until finished
+> one for the priority and one for the asset code i.e. (nextLine and nextInt)
+> for the priority we should first check if the input is an int and if it is in the range of 1 - 5.
+> for the code we should check it is a string and if it is 5 chars long.
+> in case of invalid cases, we should put the casting in a try block and
+> use next() rather than nextLine() to preserve the next line of input while throwing away the invalid inp
+> after throwing away an invalid input we should tell the user what went wrong relying on the try catch block to do this.
