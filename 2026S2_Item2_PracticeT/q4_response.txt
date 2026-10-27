@@ -21,11 +21,11 @@ Save your source code in Question4a.java.
 ==================================================
 
 b)
-
->
->
->
->
->
->
->
+overdue loans, calculate charges, build an alert
+> We should split this into 3 seperate methods, one for filtering loans
+> one for charges and one for alerts. The overdue loans method should pass
+> the days overdue to calculate charges, the charge can send the amount to
+> the alert, which will also be sent the loan length. This allows for
+> compartmentalized testing resulting in a quicker workflow as its easier
+> to find whats wrong when just testing a single section, furthermore,
+> this allows for changes to any one method to not break the rest of them.

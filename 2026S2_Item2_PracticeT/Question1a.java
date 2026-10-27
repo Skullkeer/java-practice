@@ -25,15 +25,16 @@
  * 3. Style - natural naming for variables and methods, appropriate indentation, etc.
  */
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
-
-public class Question1a {
 
 interface MapMarker {
     String label();
 }
 
-    public static void main(String[] args) {
+public class Question1a {
+
+    static void main(String[] args) {
         ShopMarker s = new ShopMarker();
         ParkMarker p = new ParkMarker();
         ArrayList<MapMarker> arrayList = new ArrayList<>();
@@ -45,9 +46,11 @@ interface MapMarker {
         }
 
     }
+
+
 }
 
-class ShopMarker implements Question1a.MapMarker {
+class ShopMarker implements MapMarker {
 
     @Override
     public String label() {
@@ -55,7 +58,7 @@ class ShopMarker implements Question1a.MapMarker {
     }
 }
 
-class ParkMarker implements Question1a.MapMarker {
+class ParkMarker implements MapMarker {
 
     @Override
     public String label() {

@@ -27,7 +27,20 @@
 
 public class Question6a {
 
-    public static void main(String[] args) {
-        // This stub has been added for your convenience
+    static int deliveryDays(Speed speed) {
+        return switch (speed) {
+            case STANDARD -> 5;
+            case EXPRESS -> 2;
+            case SAME_DAY -> 0;
+        };
+
     }
+
+    public static void main(String[] args) {
+        System.out.println("Days Until Delivery: " + deliveryDays(Speed.EXPRESS));
+    }
+}
+
+enum Speed {
+    STANDARD, EXPRESS, SAME_DAY
 }

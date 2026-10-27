@@ -22,10 +22,11 @@ Save your source code in Question5a.java.
 
 b)
 
->
->
->
->
->
->
->
+> In order to protect its valid state, all variables are private
+> this prevents users from illegally flipping a variable, e.g. completed
+> back and forth. To ensure all instances of repair job start with an OPEN
+> job state, we set completed to true outside of the constructor. The
+> complete() method can only ever make completed true, this ensures no one
+> can repeatedly transition the job between two states. prior to changing
+> completed, complete() checks if it is already true and if it is, it returns true and changes it to true
+else changes to false.

@@ -22,10 +22,10 @@ Save your source code in Question6a.java.
 
 b)
 
->
->
->
->
->
->
->
+> The use of an enum ensures the words in it are typed or used in the
+> exact same way throughout the program, this means any mistypes are
+> caught by the compiler and stopped from going into production.
+> enums also improve readability by ensuring all possible deliver speeds
+> can be viewed in one place (the enum). with a complete switch expression,
+> the compiler enforces a case for every possible option, this means a bug
+> like no case for a new delivery speed wont make it into production code.

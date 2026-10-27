@@ -27,6 +27,38 @@
 
 public class Question5a {
 
+    class RepairJob {
+        private String identifier;
+        private String description;
+        private boolean completed = false;
+
+        RepairJob(String identifier, String description) {
+            this.identifier = identifier;
+            this.description = description;
+        }
+
+        boolean complete() {
+            if (this.completed) {
+                return false;
+            }
+            else {
+                this.completed = true;
+                return true;
+            }
+
+        }
+
+        String status() {
+            if (this.completed) {
+                return "DONE";
+            }
+            else {
+                return "OPEN";
+            }
+        }
+
+    }
+
     public static void main(String[] args) {
         // This stub has been added for your convenience
     }
